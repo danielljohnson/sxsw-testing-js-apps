@@ -1,0 +1,28 @@
+{
+    "people": [
+        {
+            "id": 1,
+            "firstName": "Dan",
+            "lastName": "Johnson",
+            "favoriteColor": "red"
+        },
+        {
+            "id": 2,
+            "firstName": "Ella",
+            "lastName": "Johnson",
+            "favoriteColor": "blue"
+        },
+        {
+            "id": 3,
+            "firstName": "Ava",
+            "lastName": "Johnson",
+            "favoriteColor": "green"
+        },
+        {
+            "id": 4,
+            "firstName": "Jorden",
+            "lastName": "Cayford",
+            "favoriteColor": "purple"
+        }
+    ]
+}

@@ -1,0 +1,10 @@
+<ul class="task-list">
+    <li ng-repeat="category in taskList.categories">
+        {{ category.name | capitalize }}
+        <ul>
+            <li ng-repeat="task in taskList.tasks" ng-if="task.category === category.id" data-status="{{ task.status }}" ng-click="taskList.toggleStatus(task)">
+                <a href="#">{{ task.name | capitalize }}</a>
+            </li>
+        </ul>
+    </li>
+</ul>

@@ -1,0 +1,7 @@
+{
+  "name": "webdriverio-demo",
+  "version": "0.0.1",
+  "devDependencies": {
+    "webdriverio": "^2.4.5"
+  }
+}
