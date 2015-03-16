@@ -24,7 +24,7 @@ describe('Car', function() {
     });
 
     describe('paint(color, callback)', function() {
-        xit('should paint the car blue', function(done) {
+        it('should paint the car blue', function(done) {
             car.paint('blue', function() {
                 expect(car.color).toEqual('blue');
                 

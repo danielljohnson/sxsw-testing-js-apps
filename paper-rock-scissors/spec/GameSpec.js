@@ -45,26 +45,7 @@ describe('Game', function() {
     });
     
     xit('should repeat turn if both players choose the same value', function() {
-        spyOn(game, 'getRandomInt').and.returnValue(0);
         
-        var firstChoice;
-        
-        // force prompt to return duplicate value first time but not second
-        spyOn(window, 'prompt').and.callFake(function() {
-            if (firstChoice === 'rock') {
-                return 'paper';
-            } else {
-                firstChoice = 'rock';
-                
-                return 'rock';
-            }
-        });
-        
-        var takeTurnSpy = spyOn(game, 'takeTurn').and.callThrough();
-        
-        var turn = game.takeTurn();
-        
-        expect(takeTurnSpy.calls.count()).toEqual(2);
     });
               
     it('you should win if you have a rock and the computer has scissors', function() {
@@ -98,24 +79,6 @@ describe('Game', function() {
         var winner = game.compare({
           'you': 0,
           'computer': 1
-        });
-        
-        expect(winner).toEqual('computer');
-    });
-    
-    it('you should win if you have scissors and the computer paper', function() {
-        var winner = game.compare({
-          'you': 2,
-          'computer': 1
-        });
-        
-        expect(winner).toEqual('you');
-    });
-    
-    it('computer should win if the computer has scissors and you have paper', function() {
-        var winner = game.compare({
-          'you': 1,
-          'computer': 2
         });
         
         expect(winner).toEqual('computer');
