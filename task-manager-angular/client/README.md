@@ -19,3 +19,7 @@ Task Manager Client
 - `npm install -g protractor`
 - `webdriver-manager update'
 - `webdriver-manager start` in the tests/e2e directory
+
+#### Plato
+
+- `plato -r -d report src`
