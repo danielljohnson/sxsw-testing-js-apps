@@ -26,6 +26,4 @@ describe('mathHelpers', function() {
             assert.notStrictEqual(mathHelpers.summation(5), 20);
         });
     });
-
-    // add subtract test
 });

@@ -102,4 +102,22 @@ describe('Game', function() {
         
         expect(winner).toEqual('computer');
     });
+
+    it('you should win if you have scissors and the computer paper', function() {
+        var winner = game.compare({
+          'you': 2,
+          'computer': 1
+        });
+        
+        expect(winner).toEqual('you');
+    });
+
+    it('computer should win if the computer has scissors and you have paper', function() {
+        var winner = game.compare({
+          'you': 1,
+          'computer': 2
+        });
+        
+        expect(winner).toEqual('computer');
+    });
 });

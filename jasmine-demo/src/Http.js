@@ -1,5 +1,6 @@
 var Http = function() {
-  var method, methods = ['get', 'post', 'put', 'delete'];
+  var methods = ['get', 'post', 'put', 'delete'];
+  var method;
 
   var createMethod = function(name) {
     return function() {

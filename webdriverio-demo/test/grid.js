@@ -9,7 +9,7 @@ describe('Grid Tests', function() {
     beforeEach(function(done) {
         client = webdriverio.remote({
             desiredCapabilities: {
-                browserName: 'phantomjs'
+                browserName: 'chrome'
             }
         });
 

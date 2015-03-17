@@ -38,6 +38,4 @@ describe('Car', function() {
             });
         });
     });
-
-    // add changeDriver test
 });
